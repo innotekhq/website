@@ -8,7 +8,7 @@ const AppDescription = ({ image }: { image: string}) => (
 );
 function CaseStudy({ logo, children, image, left = false, tech }: {logo: string, children: ReactNode, image: string, left?: boolean, tech: Array<string>}) {
   const techPills = tech.map((techName) => (
-    <div className="px-4 py-2 font-semibold text-sm bg-lblue text-dpurple rounded-full shadow-sm">{techName}</div>
+    <div key={techName} className="px-4 py-2 font-semibold text-sm bg-lblue text-dpurple rounded-full shadow-sm">{techName}</div>
   ));
 
   if (left) {
