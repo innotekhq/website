@@ -8,7 +8,7 @@ function Navbar() {
       <div className="flex gap-96 items-center justify-center py-5 w-full mx-5">
         <div className="flex items-center">
           <a href='/'><div className="bg-cover bg-no-repeat bg-center w-16 h-16" style={{ backgroundImage: "url('/logo.png')" }}></div></a>
-          <div className="pl-5 font-bold text-2xl">INNOTEK</div>
+          <a href='/'><div className="pl-5 font-bold text-2xl">INNOTEK</div></a>
         </div>
         <div className="flex gap-5">
           <NavOption name='Services' />

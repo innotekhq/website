@@ -4,6 +4,7 @@ import Values from "@/components/Values";
 import Team from "@/components/Team";
 import Services from "@/components/Services";
 import CaseStudies from "@/components/CaseStudies";
+import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
@@ -35,6 +36,9 @@ export default function Home() {
       <section className='flex justify-center items-center w-full flex-col mt-24'>
         <div className='text-4xl pb-20  font-extrabold'>Case Studies</div>
         <CaseStudies />
+      </section>
+      <section  className='justify-center items-center w-full mt-24'>
+        <CTA />
       </section>
     </>
   )
