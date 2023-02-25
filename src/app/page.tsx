@@ -1,91 +1,41 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import WorkWithUs from "@/components/WorkWithUs";
+import Values from "@/components/Values";
+import Team from "@/components/Team";
+import Services from "@/components/Services";
+import CaseStudies from "@/components/CaseStudies";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className='flex justify-center items-center w-full flex-col md:flex-row'>
+        <div className="flex flex-col gap-10 justify-items-start">
+          <div className='text-2xl  font-bold'>Scale your Business with us</div>
+          <div className='text-4xl  font-extrabold'>
+            <span className='text-purple-400'>Inno</span>vative software solutions for your <span className='text-purple-400'>Tech</span> business.
+          </div>
+          <div>
+            <WorkWithUs />
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <Image src='/undraw_programming_lblue.svg' alt='programmer' width={600} height={200}/>
+      </section>
+      <section  className='flex justify-center items-center w-full flex-col mt-24'>
+        <div className='text-5xl pb-20 font-extrabold'>We Develop</div>
+        <Services />
+      </section>
+      <section className='flex justify-center items-center w-full flex-col mt-24'>
+        <div className='text-5xl pb-20 font-extrabold'>About Us</div>
+        <Values />
+      </section>
+      <section className='flex justify-center items-center w-full flex-col mt-24'>
+        <div className='text-4xl pb-20  font-extrabold'>Team</div>
+        <Team />
+      </section>
+      <section className='flex justify-center items-center w-full flex-col mt-24'>
+        <div className='text-4xl pb-20  font-extrabold'>Case Studies</div>
+        <CaseStudies />
+      </section>
+    </>
   )
 }
