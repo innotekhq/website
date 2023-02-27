@@ -22,7 +22,7 @@ export default function ContactForm() {
   if (sent) {
     return (
       <p>
-        We appreciate you reaching out to us, and we'll get back to you soon!
+        We appreciate you reaching out to us, and we’ll get back to you soon!
       </p>
     )
   }

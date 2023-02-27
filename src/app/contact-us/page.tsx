@@ -1,5 +1,6 @@
 // `app/page.js` is the UI for the root `/` URL
 import ContactForm from "@/app/contact-us/ContactForm";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -9,7 +10,7 @@ export default function Page() {
           How we can help?
         </p>
         <p>
-          Let us know more about your project by sending an email to <a className='dark:text-lblue text-dpurple underline' href='mailto:info@innotek.hu'>info@innotek.hu</a>.
+          Let us know more about your project by sending an email to <Link className='dark:text-lblue text-dpurple underline' href='mailto:info@innotek.hu'>info@innotek.hu</Link>.
         </p>
         {/*<p>*/}
         {/*  Let us know more about your project by filling out the form below or sending an email to <a className='dark:text-lblue text-dpurple underline' href='mailto:info@innotek.hu'>info@innotek.hu</a>.*/}

@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <section className='text-xl text-center'>
-        Hi! 🙇‍♂️ We're glad you're here!
+        Hi! 🙇‍♂️ We’re glad you’re here!
       </section>
       <section>
         At Innotek we build simple, working solutions for people to help their businesses and lives.
@@ -15,7 +16,7 @@ export default function Home() {
       </section>
       <section>
         <p>Share our values?</p>
-        <p className='mt-5'>We'd love to <a className='underline' href='/contact-us'>chat</a>.</p>
+        <p className='mt-5'>We’d love to <Link className='underline' href='/contact-us'>chat</Link>.</p>
       </section>
     </>
   )
