@@ -1,5 +1,5 @@
 import './globals.css'
-import Navbar from '@/components/Navbar';
+import Navbar4 from '@/components/Navbar4';
 import {Inter} from "next/font/google";
 import Footer from "@/components/Footer";
 import Head from "next/head";
@@ -29,9 +29,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="dark:bg-background">
         <div className="relative dark:text-slate-50 text-slate-800">
-          <Navbar />
-          <div className={`${inter.className} container mx-auto px-48 mt-56`}>
-            {children}
+          <div className={`${inter.className} container mx-auto max-w-2xl`}>
+            <Navbar4 />
+            <div className='flex flex-col gap-6 font-light mt-16 text-xl'>
+              {children}
+            </div>
           </div>
           <Footer />
         </div>
